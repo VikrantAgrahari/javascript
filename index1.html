@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="para">This is paragraph.</h1>
+
+        <h2 id="change">This is h2 element before change.</h2>
+
+    
+        <div class="col-6 mt-4">
+            <input type="text" class="form-control mb-2" id="name" placeholder="Enter your name">
+            <button id="buttonclick" class="btn btn-primary">Click Me</button>
+        </div>
+
+        <h2 id="result"></h2>
+    </div>
+
+    <script>
+        // var element = document.getElementById("para");
+        // var innerData = element.innerHTML;
+        // innerData = "I am chaging this paragraph content.";
+        // element.innerHTML = innerData;
+        
+        //get value from input box and insert it in html element
+        
+        
+        document.getElementById("buttonclick").addEventListener('click',function(){
+            var name = document.getElementById('name').value;
+            
+            document.getElementById('result').innerHTML = name;
+        });
+
+        // //button click
+        // document.getElementById('buttonclick').addEventListener('click',function(){
+        //     alert("The button has been clicked.");
+        // })
+        
+        //paragraph click
+        document.getElementById('para').addEventListener('click', function(){
+            document.getElementById("para").innerHTML = "lsdhownielksndojngsoijiglwkndlgkm." ;
+            alert('Text changed');
+        })
+        
+
+        //function ကြေညာ
+        // function on(){
+        //     console.log('Water is falling....');
+        // }
+
+        // function off(){
+        //     console.log('Water is stopped falling....');
+        // }
+
+        // // variabale ကြေညာ
+        // var button = 0;
+
+        // // if else condition ကြေညာ
+        // if(button == 1){
+        //     on();
+        // }
+        // else if (button == 0){
+        //     off();
+        // }
+        // else{
+        //     console.log('Button is not pressed.');
+        // }
+
+
+
+
+
+
+        // function name -> add , subtract
+        // add -> consoloe.log(2+3)
+        // subtract -> consoloe.log(2-3)
+        //if var = 1 -> add , var = 2 -> subtract
+       
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
